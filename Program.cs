@@ -21,3 +21,8 @@ typeCasting.UsingConvertClass();
 typeCasting.UsingParseMethod();
 typeCasting.UsingTryParseMethod();
 typeCasting.Exercise();
+
+ConditionalStatements conditionalStatements=new ConditionalStatements();
+conditionalStatements.IfElseExample();  
+conditionalStatements.SwitchCaseExample();
+conditionalStatements.TernaryOperatorExample();
