@@ -26,3 +26,10 @@ ConditionalStatements conditionalStatements=new ConditionalStatements();
 conditionalStatements.IfElseExample();  
 conditionalStatements.SwitchCaseExample();
 conditionalStatements.TernaryOperatorExample();
+conditionalStatements.movieTicketElligibility();
+
+Loopings loopings=new Loopings();
+loopings.ForLoopExample();
+loopings.WhileLoopExample();
+loopings.DoWhileLoopExample();
+loopings.forEachLoopExample();

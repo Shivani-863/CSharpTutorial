@@ -56,4 +56,28 @@ public class ConditionalStatements
         string eligibility=age>=18?"Eligible to vote":"Not eligible to vote";
         Console.WriteLine(eligibility);
     }
+
+    public void movieTicketElligibility()
+    {
+        Console.WriteLine("Enter your name:");
+        string name=Console.ReadLine();
+        Console.WriteLine("Enter your age:");
+        string input=Console.ReadLine();
+        bool isValidAge=int.TryParse(input, out int age);
+        if(isValidAge)
+        {
+            if (age>=18)
+            {
+                Console.WriteLine($"Hello {name}, you can watch an adult movie.");
+            }
+            else
+            {
+                Console.WriteLine($"Hello {name}, you can only watch U/A or U rated movies.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Please enter a valid age.");
+        }
+    }
 }
