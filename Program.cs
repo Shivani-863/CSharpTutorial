@@ -33,3 +33,6 @@ loopings.ForLoopExample();
 loopings.WhileLoopExample();
 loopings.DoWhileLoopExample();
 loopings.forEachLoopExample();
+
+CollectionsList lists=new CollectionsList();
+lists.ListExample();
