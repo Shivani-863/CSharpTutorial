@@ -23,7 +23,7 @@ public class InputOutput
         {
             Console.WriteLine("Invalid height input.");
         }
-        Console.WriteLine("Are you a good student? (yes/no):");
+        Console.WriteLine("Do you love Om? (yes/no):");
         bool isGoodStudent=Console.ReadLine().ToLower()=="yes"; // Reads a line and checks if it equals "yes"
         Console.WriteLine($"Are you a good student? {isGoodStudent}");  
         // int number=Console.ReadLine(); // Compilation error

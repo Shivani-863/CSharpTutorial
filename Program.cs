@@ -36,3 +36,8 @@ loopings.forEachLoopExample();
 
 CollectionsList lists=new CollectionsList();
 lists.ListExample();
+
+Dictionaries dictionary= new Dictionaries();
+dictionary.StudentMarks();
+QueueExample queue= new QueueExample();
+queue.Exercise();
