@@ -39,9 +39,12 @@ lists.ListExample();
 
 Dictionaries dictionary= new Dictionaries();
 dictionary.StudentMarks();
+
 QueueExample queue= new QueueExample();
 queue.Exercise();
 
-
 StackExample stack=new StackExample();
 stack.Exercise();
+
+LinkedListExample ll=new LinkedListExample();
+ll.Exercise();

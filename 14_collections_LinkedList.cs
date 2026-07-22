@@ -7,22 +7,28 @@ public class LinkedListExample
     {
         LinkedList<string> names = new LinkedList<string>();
         names.AddFirst("Bob");
-        names.AddLast("Chalie");
+        names.AddLast("Charlie");
         names.AddLast("David");
         names.AddFirst("Alice");
         Console.WriteLine(names.Find("Charlie"));
-        LinkedListNode<string> charlie = names.Find("Charlie");
+        LinkedListNode<string>? charlie = names.Find("Charlie");
+        if(charlie!=null)
+        {
         names.AddAfter(charlie,"Eve");
         names.AddBefore(charlie,"John");
+        }
         names.Remove("Bob");
 
         foreach( string name in names)
         {
-            Console.Write($"{name} -> ");
+            Console.Write($"{name}");
+            if(name!= names.Last!.Value)
+            {
+                Console.Write(" -> ");
+            }
         }
+        Console.WriteLine();
         Console.WriteLine(names.First.Value);
         Console.WriteLine(names.Last.Value);
-
-
     }
 }
