@@ -48,3 +48,6 @@ stack.Exercise();
 
 LinkedListExample ll=new LinkedListExample();
 ll.Exercise();
+
+LINQExample lINQ=new LINQExample();
+lINQ.TrialLinQ();
