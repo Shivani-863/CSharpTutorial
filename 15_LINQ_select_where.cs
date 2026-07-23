@@ -129,7 +129,8 @@ using System.Collections.Generic;
 
  public class LINQExample
 {
-    public void TrialLinQ()
+    // Where -> Filters the data or collection to retrn a new collection
+    public void TrialWhere()
     {
         List<int>numbers=[1,2,3,4,5,6,7,8,9,10];
         List<int>Even=numbers.Where(n=> n%2==0).ToList();
@@ -142,4 +143,22 @@ using System.Collections.Generic;
             Console.WriteLine(num);
         }
     }
+// If Where() is used for filtering, then Select() is used for projection.
+
+// This is one of the most frequently used LINQ methods in C#.
+// Select() -> Select() transforms each element of a collection into something else.
+// Where()  → Filters rows (keeps or discards)
+// Select() → Chooses or transforms the data to return
+public void TrialSelect()
+{
+    List<int>numbers=new()
+    {
+      10,20,30,40,50,60  
+    };
+    var dividedBy10 = numbers.Select(n=>n/=10);
+    foreach(int num in dividedBy10)
+        {
+            Console.WriteLine(num);
+        }
+}
 }

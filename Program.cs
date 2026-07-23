@@ -50,4 +50,11 @@ LinkedListExample ll=new LinkedListExample();
 ll.Exercise();
 
 LINQExample lINQ=new LINQExample();
-lINQ.TrialLinQ();
+lINQ.TrialWhere();
+lINQ.TrialSelect();
+
+Employee employee = new Employee();
+employee.TrialOrderBy();
+employee.TrialOrderByDescending();
+employee.TrialThenBy();
+employee.TrialThenByDescending();
